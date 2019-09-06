@@ -7,18 +7,19 @@ import { CustomersModule } from './customers/customers.module';
 import { SharedModule } from  './shared/shared.module';
 import { OrdersModule } from './orders/orders.module';
 import { CoreModule } from './core/core.module';
-  
+
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     CustomersModule,
     SharedModule,
     CoreModule,
-    OrdersModule
+    OrdersModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
