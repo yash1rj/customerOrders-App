@@ -8,8 +8,10 @@ import { CustomersComponent }  from './customers.component';
 import { CustomersListComponent } from './customers-list/customers-list.component';
 import { FilterTextboxComponent } from './customers-list/filter-textBox.component';
 
+import { CustomersRoutingModule } from './customers-routing.module';
+
 @NgModule({
-  imports:      [ CommonModule, FormsModule, SharedModule ],
+  imports:      [ CommonModule, FormsModule, SharedModule, CustomersRoutingModule ],
   declarations: [ CustomersComponent, CustomersListComponent, FilterTextboxComponent ],
   exports: [ CustomersComponent ]
 })
